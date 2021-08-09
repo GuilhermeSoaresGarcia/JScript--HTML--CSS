@@ -1,0 +1,84 @@
+body {
+    margin: auto;
+    padding: 0px;
+}
+
+h1 {
+    display: inline;
+}
+
+nav {
+    display: inline-flex;
+}
+
+li {
+    display: inline;
+}
+
+img {
+    margin: 0px;
+}
+
+header {
+    border: 3px solid black;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+#facebook {
+    background-size: 30px;
+    background-image: url(img/social_media/facebook.png);
+}
+
+#facebook:hover {
+    background-size: 30px;
+    background-image: url(img/social_media/facebook1.png);
+}
+
+#instagram {
+    background-size: 30px;
+    background-image: url(img/social_media/instagram.png);
+}
+
+#instagram:hover {
+    background-size: 30px;
+    background-image: url(img/social_media/instagram1.png);
+}
+
+#twitter {
+    background-size: 30px;
+    background-image: url(img/social_media/twitter.png);
+}
+
+#twitter:hover {
+    background-size: 30px;
+    background-image: url(img/social_media/twitter1.png);
+}
+
+#github {
+    background-size: 30px;
+    background-image: url(img/social_media/github.png);
+}
+
+#github:hover {
+    background-size: 30px;
+    background-image: url(img/social_media/github1.png);
+}
+
+main {
+    border: 3px solid black;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-small;
+    position: fixed;
+    width: 260px;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -130px;
+}
