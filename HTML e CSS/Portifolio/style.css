@@ -1,5 +1,5 @@
-body {
-    margin: auto;
+* {
+    margin: 0px;
     padding: 0px;
 }
 
@@ -13,10 +13,6 @@ nav {
 
 li {
     display: inline;
-}
-
-img {
-    margin: 0px;
 }
 
 header {
@@ -74,11 +70,18 @@ main {
 }
 
 footer {
+    display: inline-flex;
     font-family: 'Courier New', Courier, monospace;
     font-size: xx-small;
-    position: fixed;
-    width: 260px;
+    background-color: brown;
+    /* position: fixed; */
+    /* width: 260px;
     bottom: 0px;
     left: 50%;
-    margin-left: -130px;
+    margin-left: -130px; */
+}
+
+#freepik {
+    background-color: aqua;
+    text-align: right;
 }
