@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        /* label {
+            display: block;
+        } */
+    </style>
+</head>
+
+<body>
+    <form action="#" method="GET" target="_blank" autocomplete="off">
+        <p>O formulário</p>
+        <fieldset>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email">
+            </p>
+            <p>
+                <label for="dev">Sou um dev?</label>
+                <input type="checkbox" id="dev" name="dev" value="sim" checked>
+            </p>
+            <p>
+                <label for="genero">Gênero:</label>
+                <input type="radio" id="masculino" name="genero" value="masculino">Masculino</input>
+                <input type="radio" id="feminino" name="genero" value="feminino">Feminino</input>
+            </p>
+            <p>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" value="1984-12-27">
+            </p>
+            <p>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" value="13:00">
+            </p>
+            <p>
+                <label for="cor">Cor favorita:</label>
+                <input type="color" id="cor" name="cor" value="#0000ff">
+            </p>
+            <p><label for="foto">Enviar foto:</label>
+                <input type="file" id="foto" name="foto" accept=".png,.jpg,.jpeg">
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </p>
+        </fieldset>
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>

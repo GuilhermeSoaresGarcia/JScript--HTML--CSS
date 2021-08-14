@@ -3,23 +3,37 @@
     padding: 0px;
 }
 
-h1 {
-    display: inline;
-}
-
-nav {
-    display: inline-flex;
-}
-
-li {
-    display: inline;
-}
-
 header {
     border: 3px solid black;
-    max-width: 1000px;
+    max-width: auto;
     margin: auto;
-    text-align: center;
+}
+
+#cabecalho {
+    width: 1000px;
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    position: fixed;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+}
+
+#titulo {
+    display: flex;
+    background-color: khaki;
+}
+
+#menu {
+    background-color: lawngreen;
+}
+
+#social-media {
+    align-items: right;
+    background-color: red;
 }
 
 #facebook {
@@ -63,25 +77,25 @@ header {
 }
 
 main {
-    border: 3px solid black;
+    padding: 50px 10px 10px 0px;
+    background-color: rosybrown;
     max-width: 1000px;
     margin: auto;
-    text-align: center;
+    text-align: justify;
 }
 
 footer {
-    display: inline-flex;
+    /* display: inline-flex;*/
     font-family: 'Courier New', Courier, monospace;
     font-size: xx-small;
     background-color: brown;
-    /* position: fixed; */
-    /* width: 260px;
-    bottom: 0px;
-    left: 50%;
+    /* position: absolute; */
+    /* width: 260px; */
+    /* left: 50%;
     margin-left: -130px; */
 }
 
 #freepik {
     background-color: aqua;
-    text-align: right;
+    text-align: center;
 }
