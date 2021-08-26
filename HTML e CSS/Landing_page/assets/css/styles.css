@@ -13,37 +13,107 @@ body {
 }
 
 
+/* CABEÇALHO */
+
+.cabecalho {
+    position: fixed;
+    width: 100%;
+    background: #ccc;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.cabecalho .col {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    /* background: aqua; */
+}
+
+.cabecalho .col h1 {
+    padding: 10px 0 0 30px;
+    float: left;
+    background: lightgreen;
+}
+
+
 /* MENU */
 
-.menu {
-    width: 100%;
-    position: fixed;
-    background-color: black;
-}
-
-.menu ul {
+.cabecalho .col .menu .sections {
     list-style: none;
-    display: block;
-    width: 1200px;
-    max-width: 1200px;
-    padding: 0 30px;
-    margin: 0 auto;
+    padding-left: 600px;
 }
 
-.menu ul li {
+.cabecalho .col .menu .sections li {
     float: left;
 }
 
-.menu ul li a {
+.cabecalho .col .menu .sections li a {
     display: block;
     color: #fff;
     padding: 20px;
     text-decoration: none;
 }
 
-.menu ul li a:hover {
+.cabecalho .col .menu .sections li a:hover {
     background: #333;
     transition: 500ms ease-in-out;
+}
+
+
+/* SOCIAL MEDIA */
+
+.cabecalho .col .menu .social-media {
+    list-style: none;
+}
+
+.cabecalho .col .menu .social-media li {
+    float: left;
+}
+
+.cabecalho .col .menu .social-media li a {
+    display: block;
+    padding: 20px;
+    margin: -5px auto;
+}
+
+#facebook {
+    background-size: 30px;
+    background-image: url(../img/social_media/facebook.png);
+}
+
+#facebook:hover {
+    background-size: 30px;
+    background-image: url(../img/social_media/facebook1.png);
+}
+
+#instagram {
+    background-size: 30px;
+    background-image: url(../img/social_media/instagram.png);
+}
+
+#instagram:hover {
+    background-size: 30px;
+    background-image: url(../img/social_media/instagram1.png);
+}
+
+#twitter {
+    background-size: 30px;
+    background-image: url(../img/social_media/twitter.png);
+}
+
+#twitter:hover {
+    background-size: 30px;
+    background-image: url(../img/social_media/twitter1.png);
+}
+
+#github {
+    background-size: 30px;
+    background-image: url(../img/social_media/github.png);
+}
+
+#github:hover {
+    background-size: 30px;
+    background-image: url(../img/social_media/github1.png);
 }
 
 
@@ -52,7 +122,7 @@ body {
 .home {
     max-width: 100%;
     padding: 30px;
-    padding-top: 60px;
+    padding-top: 80px;
     height: 100vh;
     background: red;
 }
@@ -89,7 +159,7 @@ body {
 .main {
     max-width: 100%;
     padding: 30px;
-    padding-top: 60px;
+    padding-top: 80px;
     height: 100vh;
     background: turquoise;
 }
@@ -118,7 +188,7 @@ body {
 .agenda {
     max-width: 100%;
     padding: 30px;
-    padding-top: 60px;
+    padding-top: 80px;
     height: 100vh;
     background: green;
 }
@@ -145,13 +215,13 @@ body {
 /* Media queries */
 
 @media (max-width: 568px) {
-    .grid .col .col-content {
+    .home .col .col-content {
         width: 100%;
     }
 }
 
 @media (min-width: 569px) and (max-width: 768px) {
-    .grid .col .col-content {
+    .home .col .col-content {
         width: 50%;
     }
 }
