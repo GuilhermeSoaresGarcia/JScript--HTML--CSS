@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+/* MENU */
+
+.menu {
+    width: 100%;
+    position: fixed;
+    background-color: black;
+}
+
+.menu ul {
+    list-style: none;
+    display: block;
+    width: 1200px;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background: #333;
+    transition: 500ms ease-in-out;
+}
+
+
+/* HOME */
+
+.home {
+    max-width: 100%;
+    padding: 30px;
+    padding-top: 60px;
+    height: 100vh;
+    background: red;
+}
+
+.home:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.home .col {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home .col .col-content {
+    box-sizing: border-box;
+    float: left;
+    height: 300px;
+    width: 33.33%;
+    padding: 10px;
+    background: yellow;
+}
+
+.home:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* MAIN */
+
+.main {
+    max-width: 100%;
+    padding: 30px;
+    padding-top: 60px;
+    height: 100vh;
+    background: turquoise;
+}
+
+.main:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: tomato;
+}
+
+.teste .teste1 {
+    float: left;
+    width: 33.33%;
+    background: lightgreen;
+}
+
+
+/* AGENDA */
+
+.agenda {
+    max-width: 100%;
+    padding: 30px;
+    padding-top: 60px;
+    height: 100vh;
+    background: green;
+}
+
+.agenda:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.agenda .agenda-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: tomato;
+}
+
+.teste .teste1 {
+    float: left;
+    width: 33.33%;
+    background: lightgreen;
+}
+
+
+/* Media queries */
+
+@media (max-width: 568px) {
+    .grid .col .col-content {
+        width: 100%;
+    }
+}
+
+@media (min-width: 569px) and (max-width: 768px) {
+    .grid .col .col-content {
+        width: 50%;
+    }
+}

@@ -13,37 +13,74 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
         }
         
+        #lista {
+            max-width: 500px;
+            border: tomato solid 1px;
+        }
+        
+        li:nth-child(even) {
+            background: #ddd;
+        }
+        
         .item {
             display: inline-block;
-            border: 1px solid blue;
-            width: 200px;
+            height: 35px;
         }
         
         .qtd {
-            display: inline;
-            border: 1px solid red;
+            display: inline-block;
+            background: transparent;
+            border: 1px solid;
             width: 50px;
         }
     </style>
 </head>
 
 <body>
-    <h1><u>Lista de compras</u></h1>
+    <div id="lista">
+        <h1><u>Lista de compras</u></h1>
 
-    <form action="lista.txt" method="dialog" target="_blank">
-        <h2><label for="hortifruti">Hortifruti</h2></label>
-            <div class="item"><input type="checkbox" name="hortifruti" id="laranja">Laranja</div>
-            <div class="qtd"><input type="number" name="hortifruti" id="laranja_qtd" class="qtd" min="1" value="1"></div><br>
-            <div class="item"><input type="checkbox" name="hortifruti" id="melao">Melão</div>
-            <div class="qtd"><input type="number" name="hortifruti" id="melao_qtd" class="qtd" min="1" value="1"></div><br>
-            <div class="item"><input type="checkbox" name="hortifruti" id="maca">Maçã</div>
-            <div class="qtd"><input type="number" name="hortifruti" id="maca_qtd" class="qtd" min="1" value="1"></div>
-            <br><br>
-            <button type="submit">Ok</button>
-            <button type="reset">Limpar</button>
-    </form>
+        <form action="lista.txt" method="dialog" target="_blank">
+            <h2><label for="hortifruti">Hortifruti</h2></label>
+                <ul>
+                    <li>
+                        <div class="item"><input type="checkbox" name="hortifruti" id="laranja">Laranja</div>
+                        <div class="qtd"><input type="number" name="hortifruti" id="laranja_qtd" class="qtd" min="1" value="1">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item"><input type="checkbox" name="hortifruti" id="melao">Melão</div>
+                        <div class="qtd"><input type="number" name="hortifruti" id="melao_qtd" class="qtd" min="1" value="1">
+                        </div>
+                    </li>
 
+                    <li>
+                        <div class="item"><input type="checkbox" name="hortifruti" id="maca">Maçã</div>
+                        <div class="qtd"><input type="number" name="hortifruti" id="maca_qtd" class="qtd" min="1" value="1">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item"><input type="checkbox" name="hortifruti" id="maca">Limão</div>
+                        <div class="qtd"><input type="number" name="hortifruti" id="maca_qtd" class="qtd" min="1" value="1">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item"><input type="checkbox" name="hortifruti" id="maca">Maçã</div>
+                        <div class="qtd"><input type="number" name="hortifruti" id="maca_qtd" class="qtd" min="1" value="1">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item"><input type="checkbox" name="hortifruti" id="maca">Maçã</div>
+                        <div class="qtd"><input type="number" name="hortifruti" id="maca_qtd" class="qtd" min="1" value="1">
+                        </div>
+                    </li>
+                </ul>
+                <br>
+                <button type="submit">Ok</button>
+                <button type="reset">Limpar</button>
+        </form>
 
+    </div>
 </body>
 
 </html>
