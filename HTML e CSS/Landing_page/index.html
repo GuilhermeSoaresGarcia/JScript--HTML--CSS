@@ -12,12 +12,15 @@
 <body>
     <header class="cabecalho">
         <div class="col">
+
             <h1>titulo</h1>
+
             <nav class="menu">
                 <ul class="sections">
                     <li><a href="#home">home</a></li>
                     <li><a href="#main">main</a></li>
                     <li><a href="#agenda">agenda</a></li>
+                    <li><a href="#contato">contato</a></li>
                 </ul>
                 <ul class="social-media">
                     <li>
@@ -86,6 +89,42 @@
                 <div class="teste1">asdasd</div>
                 <div class="teste1">asdasd</div>
             </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="contato-content">
+            <form action="#" method="POST" target="_blank" autocomplete="off">
+                <h1>Contato</h1>
+                <fieldset>
+                    <p>Escreve qaulquer merda aí, seu arrombado!</p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Insira seu email">
+                    </p>
+
+                    <p><label for="selecao">Motivo do contato:</label>
+                        <select name="selecao" id="selecao">
+                            <option value="---"label="Selecione uma opção" disabled selected></option>
+                        <option value="opcao1" label="Contato comercial"></option>
+                        <option value="opcao2" label="Pedido de música"></option>
+                        <option value="opcao2" label="Outros"></option>
+                    </select>
+                    </p>
+                    <br>
+                    <p><label for="texto">Digite sua mensagem no campo abaixo:</label></p>
+                    <p><textarea name="texto" id="texto"></textarea>
+                    </p>
+                    <br>
+                    <p>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Reset</button>
+                    </p>
+                </fieldset>
+            </form>
         </div>
     </section>
 

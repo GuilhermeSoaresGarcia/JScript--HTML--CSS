@@ -40,7 +40,7 @@ body {
 
 .cabecalho .col .menu .sections {
     list-style: none;
-    padding-left: 600px;
+    padding-left: 540px;
 }
 
 .cabecalho .col .menu .sections li {
@@ -200,6 +200,35 @@ body {
 }
 
 .agenda .agenda-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: tomato;
+}
+
+.teste .teste1 {
+    float: left;
+    width: 33.33%;
+    background: lightgreen;
+}
+
+
+/* CONTATO */
+
+.contato {
+    max-width: 100%;
+    padding: 30px;
+    padding-top: 80px;
+    height: 100vh;
+    background: turquoise;
+}
+
+.contato:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contato .contato-content {
     max-width: 1200px;
     margin: 0 auto;
     background: tomato;
