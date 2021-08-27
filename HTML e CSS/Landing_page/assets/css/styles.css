@@ -124,7 +124,8 @@ body {
     padding: 30px;
     padding-top: 80px;
     height: 100vh;
-    background: red;
+    background-image: url(../img/home.jpg);
+    background-size: cover;
 }
 
 .home:after {
@@ -142,9 +143,11 @@ body {
     box-sizing: border-box;
     float: left;
     height: 300px;
+    height: 90vh;
     width: 33.33%;
     padding: 10px;
-    background: yellow;
+    color: white;
+    background: rgba(0, 0, 0, 0.400);
 }
 
 .home:after {
@@ -161,7 +164,8 @@ body {
     padding: 30px;
     padding-top: 80px;
     height: 100vh;
-    background: turquoise;
+    background-image: url(../img/main.jpg);
+    background-size: cover;
 }
 
 .main:after {
@@ -172,8 +176,10 @@ body {
 
 .main .main-content {
     max-width: 1200px;
+    height: 90vh;
     margin: 0 auto;
-    background: tomato;
+    color: white;
+    background: rgba(0, 0, 0, 0.400);
 }
 
 .teste .teste1 {
@@ -190,7 +196,8 @@ body {
     padding: 30px;
     padding-top: 80px;
     height: 100vh;
-    background: green;
+    background-image: url(../img/agenda.jpg);
+    background-size: cover;
 }
 
 .agenda:after {
@@ -201,8 +208,10 @@ body {
 
 .agenda .agenda-content {
     max-width: 1200px;
+    height: 90vh;
     margin: 0 auto;
-    background: tomato;
+    color: white;
+    background: rgba(0, 0, 0, 0.400);
 }
 
 .teste .teste1 {
@@ -219,7 +228,8 @@ body {
     padding: 30px;
     padding-top: 80px;
     height: 100vh;
-    background: turquoise;
+    background-image: url(../img/contato.jpg);
+    background-size: cover;
 }
 
 .contato:after {
@@ -230,8 +240,11 @@ body {
 
 .contato .contato-content {
     max-width: 1200px;
+    height: 90vh;
     margin: 0 auto;
-    background: tomato;
+    color: white;
+    background: rgba(0, 0, 0, 0.400);
+    box-shadow: 5px 5px 15px #000;
 }
 
 .teste .teste1 {
