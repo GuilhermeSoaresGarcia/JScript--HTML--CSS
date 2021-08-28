@@ -18,8 +18,8 @@ body {
 .cabecalho {
     position: fixed;
     width: 100%;
-    background: #ccc;
-    box-shadow: 5px 5px 15px #000;
+    background: #333;
+    box-shadow: 5px 5px 15px black;
 }
 
 .cabecalho .col {
@@ -32,7 +32,8 @@ body {
 .cabecalho .col h1 {
     padding: 10px 0 0 30px;
     float: left;
-    background: lightgreen;
+    color: #888;
+    /* background: lightgreen; */
 }
 
 
@@ -49,13 +50,13 @@ body {
 
 .cabecalho .col .menu .sections li a {
     display: block;
-    color: #fff;
+    color: #000;
     padding: 20px;
     text-decoration: none;
 }
 
 .cabecalho .col .menu .sections li a:hover {
-    background: #333;
+    background: #888;
     transition: 500ms ease-in-out;
 }
 
@@ -122,7 +123,7 @@ body {
 .home {
     max-width: 100%;
     padding: 30px;
-    padding-top: 80px;
+    padding-top: 60px;
     height: 100vh;
     background-image: url(../img/home.jpg);
     background-size: cover;
@@ -137,13 +138,14 @@ body {
 .home .col {
     max-width: 1200px;
     margin: 0 auto;
+    box-shadow: 5px 5px 15px #000;
 }
 
 .home .col .col-content {
     box-sizing: border-box;
     float: left;
     height: 300px;
-    height: 90vh;
+    height: 100vh;
     width: 33.33%;
     padding: 10px;
     color: white;
@@ -162,7 +164,7 @@ body {
 .main {
     max-width: 100%;
     padding: 30px;
-    padding-top: 80px;
+    padding-top: 60px;
     height: 100vh;
     background-image: url(../img/main.jpg);
     background-size: cover;
@@ -176,10 +178,11 @@ body {
 
 .main .main-content {
     max-width: 1200px;
-    height: 90vh;
+    height: 100vh;
     margin: 0 auto;
     color: white;
     background: rgba(0, 0, 0, 0.400);
+    box-shadow: 5px 5px 15px #000;
 }
 
 .teste .teste1 {
@@ -194,7 +197,7 @@ body {
 .agenda {
     max-width: 100%;
     padding: 30px;
-    padding-top: 80px;
+    padding-top: 60px;
     height: 100vh;
     background-image: url(../img/agenda.jpg);
     background-size: cover;
@@ -208,10 +211,11 @@ body {
 
 .agenda .agenda-content {
     max-width: 1200px;
-    height: 90vh;
+    height: 100vh;
     margin: 0 auto;
     color: white;
     background: rgba(0, 0, 0, 0.400);
+    box-shadow: 5px 5px 15px #000;
 }
 
 .teste .teste1 {
@@ -226,7 +230,7 @@ body {
 .contato {
     max-width: 100%;
     padding: 30px;
-    padding-top: 80px;
+    padding-top: 60px;
     height: 100vh;
     background-image: url(../img/contato.jpg);
     background-size: cover;
