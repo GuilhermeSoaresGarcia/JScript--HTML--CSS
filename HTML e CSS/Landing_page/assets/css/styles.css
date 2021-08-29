@@ -23,7 +23,7 @@ body {
 }
 
 .cabecalho .col {
-    width: 1200px;
+    max-width: 1200px;
     height: 60px;
     margin: 0 auto;
     /* background: aqua; */
@@ -39,9 +39,19 @@ body {
 
 /* MENU */
 
+.cabecalho .col .col-menu {
+    float: right;
+    padding-right: 30px;
+}
+
+.cabecalho .col .menu .menu-sections {
+    float: left;
+}
+
 .cabecalho .col .menu .sections {
+    display: inline;
     list-style: none;
-    padding-left: 540px;
+    /* padding-left: 540px; */
 }
 
 .cabecalho .col .menu .sections li {
@@ -62,6 +72,10 @@ body {
 
 
 /* SOCIAL MEDIA */
+
+.cabecalho .col .menu .menu-social-media {
+    float: left;
+}
 
 .cabecalho .col .menu .social-media {
     list-style: none;
@@ -259,6 +273,12 @@ body {
 
 
 /* Media queries */
+
+@media (max-width: 1024px) {
+    .cabecalho .col .col-menu {
+        display: none;
+    }
+}
 
 @media (max-width: 568px) {
     .home .col .col-content {
