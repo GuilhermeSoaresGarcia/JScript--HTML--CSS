@@ -1,6 +1,6 @@
-// Não podemos criar variáveis com palavras reservadas
-// Variáveis devem ter nomes significativos 
-// Não pode começar variável com número
+// Não podemos criar constantes com palavras reservadas
+// Constantes devem ter nomes significativos 
+// Não pode começar constantes com número
 // Não podem conter espaços ou traços
 // Utilize "camelCase" - primeira palavra minúscula, demais com capitula maiúscula
 // Case sensitive 
@@ -8,10 +8,10 @@
 // NÃO UTILIZE VAR, UTILIZE CONST
 
 const nome = 'João';
-const primeiroNumero = '2';
+const primeiroNumero = 2;
 const segundoNumero = 5;
 
-const conta = primeiroNumero ** segundoNumero;
+const conta = primeiroNumero * segundoNumero;
 console.log(conta);
 
 console.log(typeof primeiroNumero);
