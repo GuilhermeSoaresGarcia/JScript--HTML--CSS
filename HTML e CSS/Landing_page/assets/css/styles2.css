@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    position: fixed;
+    width: 100%;
+    background: #333;
+    box-shadow: 5px 5px 15px black;
+}
+
+.cabecalho .col {
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    /* background: aqua; */
+}
+
+.cabecalho .col h1 {
+    padding: 10px 0 0 30px;
+    float: left;
+    color: #888;
+    /* background: lightgreen; */
+}
+
+
+/* MENU */
+
+.cabecalho .col .col-menu {
+    float: right;
+    padding-right: 30px;
+}
+
+.cabecalho .col .menu .menu-sections {
+    float: left;
+}
+
+.cabecalho .col .menu .sections {
+    display: inline;
+    list-style: none;
+    /* padding-left: 540px; */
+}
+
+.cabecalho .col .menu .sections li {
+    float: left;
+}
+
+.cabecalho .col .menu .sections li a {
+    display: block;
+    color: #000;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.cabecalho .col .menu .sections li a:hover {
+    background: #888;
+    transition: 500ms ease-in-out;
+}
+
+
+/* SOCIAL MEDIA */
+
+.cabecalho .col .menu .menu-social-media {
+    float: left;
+}
+
+.cabecalho .col .menu .social-media {
+    list-style: none;
+}
+
+.cabecalho .col .menu .social-media li {
+    float: left;
+}
+
+.cabecalho .col .menu .social-media li a {
+    display: block;
+    padding: 20px 20px 0px 20px;
+    margin: -5px auto;
+}
+
+.cabecalho .col .menu .social-media li a img {
+    width: 30px;
+    height: 30px;
+}
+
+.cabecalho .col .menu .social-media li a img:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.500));
+    transition: 300ms ease-in-out;
+}
+
+
+/* HOME */
+
+.home {
+    max-width: 100%;
+    padding: 30px;
+    padding-top: 60px;
+    height: 100vh;
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+}
+
+.home:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.home .home-grid {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.400);
+    box-shadow: 5px 5px 15px #000;
+}
+
+.home .home-grid .col-left {
+    /* box-sizing: border-box; */
+    float: left;
+    height: auto;
+    width: 50%;
+    padding-top: 20vh;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.home .home-grid .col-left .col-content {
+    float: right;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 50%;
+    color: white;
+}
+
+.home .home-grid .col-right {
+    float: left;
+    height: auto;
+    width: 50%;
+    padding-top: 20vh;
+    padding-left: 15px;
+}
+
+.home .home-grid .col-right .col-content {
+    float: left;
+    width: 50%;
+    color: white;
+    margin: 10% 0 0 0;
+}
+
+.home .home-grid .col-right .col-content img {
+    width: 100%;
+}
+
+
+/* MAIN */
+
+.main {
+    max-width: 100%;
+    padding: 30px;
+    padding-top: 60px;
+    height: 100vh;
+    background-image: url(../img/main.jpg);
+    background-size: cover;
+}
+
+.main:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main .main-content {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    color: white;
+    background: rgba(0, 0, 0, 0.400);
+    box-shadow: 5px 5px 15px #000;
+}
+
+.teste .teste1 {
+    float: left;
+    width: 33.33%;
+    background: lightgreen;
+}
+
+
+/* AGENDA */
+
+.agenda {
+    max-width: 100%;
+    padding: 30px;
+    padding-top: 60px;
+    height: 100vh;
+    background-image: url(../img/agenda.jpg);
+    background-size: cover;
+}
+
+.agenda:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.agenda .agenda-content {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    color: white;
+    background: rgba(0, 0, 0, 0.400);
+    box-shadow: 5px 5px 15px #000;
+}
+
+.teste .teste1 {
+    float: left;
+    width: 33.33%;
+    background: lightgreen;
+}
+
+
+/* CONTATO */
+
+.contato {
+    max-width: 100%;
+    padding: 30px;
+    padding-top: 60px;
+    height: 100vh;
+    background-image: url(../img/contato.jpg);
+    background-size: cover;
+}
+
+.contato:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contato .contato-content {
+    max-width: 1200px;
+    height: 90vh;
+    margin: 0 auto;
+    color: white;
+    background: rgba(0, 0, 0, 0.400);
+    box-shadow: 5px 5px 15px #000;
+}
+
+.teste .teste1 {
+    float: left;
+    width: 33.33%;
+    background: lightgreen;
+}
+
+
+/* Media queries */
+
+@media (max-width: 1024px) {
+    .cabecalho .col .col-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 568px) {
+    .home .col .col-content {
+        width: 100%;
+    }
+}
+
+@media (min-width: 569px) and (max-width: 768px) {
+    .home .col .col-content {
+        width: 50%;
+    }
+}
