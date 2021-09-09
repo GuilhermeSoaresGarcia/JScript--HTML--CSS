@@ -7,9 +7,10 @@ function tabelaImc() { // Encapsulamento
 
         let peso = form.querySelector('.peso-input'); // Capturar input peso
         let altura = form.querySelector('.altura-input'); // Capturar input altura
-        let imc = Number(peso.value / (altura.value ** 2)); // Calcular imc
+        let alturaCorrigido = altura.value.replace(/,/g, '.'); // Se o usuário digitar "," substituir por "."
+        let imc = Number(peso.value / (alturaCorrigido ** 2)); // Calcular imc
 
-        imcResult = function(imc) { // Cria função e armazena o resultado do cálculo do imc
+        function imcResult() { // Cria função e armazena o resultado do cálculo do imc
             if (imc < 18) {
                 return `<div class="resultado-amarelo">Seu IMC é ${imc.toFixed(2)}: Abaixo do peso</div>`;
             } else if (imc >= 18.5 && imc <= 24.9) {
@@ -26,11 +27,11 @@ function tabelaImc() { // Encapsulamento
                 return ' ';
         }
 
-        resultado.innerHTML = imcResult(imc);
+        resultado.innerHTML = imcResult();
 
-        form.addEventListener('submit', function(campoZerado) { //Evento para campos em branco
+        form.addEventListener('submit', function(campoVazio) { //Evento para campos em branco
             if (peso.value == "" || altura.value == "") { // Se peso ou altura estiverem em branco
-                return campoZerado = (resultado.innerHTML = '<div class="resultado-vermelho">Os campos "peso" e "altura" devem ser preenchidos.</div>'); // Escreve na div resultado o texto ao lado
+                return campoVazio = (resultado.innerHTML = '<div class="resultado-vermelho">Os campos "peso" e "altura" devem ser preenchidos.</div>'); // Escreve na div resultado o texto ao lado
             }
         })
 
@@ -39,6 +40,5 @@ function tabelaImc() { // Encapsulamento
         })
     })
 }
-
 
 tabelaImc();
