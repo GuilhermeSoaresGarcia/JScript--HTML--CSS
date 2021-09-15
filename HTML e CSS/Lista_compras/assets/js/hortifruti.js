@@ -1,4 +1,4 @@
-function lanches() {
+function hortifruti() {
     let idCont = 5;
     let itensArray = [{
             id: idCont++,
@@ -68,7 +68,7 @@ function lanches() {
     ]
 
     function lista() {
-        const listaItens = document.querySelector('.lanches');
+        const listaItens = document.querySelector('.hortifruti');
         let ul = listaItens.querySelector('ul');
 
         for (i = 0; i < itensArray.length; i++) {
@@ -84,4 +84,4 @@ function lanches() {
     lista();
 }
 
-lanches();
+hortifruti();
