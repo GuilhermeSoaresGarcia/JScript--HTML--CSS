@@ -1,6 +1,8 @@
 const estrutura = document.querySelector('.container');
 let div = document.createElement('div'); // Cria a tag "div" (mas ainda não usa)
 
+
+
 const elementos = [{
         tag: 'p',
         texto: 'Frase 1'
@@ -29,3 +31,7 @@ for (i = 0; i < elementos.length; i++) {
 }
 
 estrutura.appendChild(div); // Usa a tag "div" (e como os demais itens foram criados dentro do "for" tudo deve aparecer)
+
+
+estrutura.appendChild(a);
+a.appendChild(textoA);
