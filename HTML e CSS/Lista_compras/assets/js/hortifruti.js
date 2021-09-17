@@ -1,68 +1,38 @@
 function hortifruti() {
-    let idCont = 5;
+    let idCont = 1;
     let itensArray = [{
-            id: idCont++,
-            descricao: 'Pão castanhas',
+            id: (`hft${idCont++}`),
+            descricao: 'Melão espanhol',
             qtd: 4
         },
         {
-            id: idCont++,
-            descricao: 'Outros pães',
+            id: `hft${idCont++}`,
+            descricao: 'Bananas',
+            qtd: 12
+        },
+        {
+            id: `hft${idCont++}`,
+            descricao: 'Maças',
+            qtd: 6
+        },
+        {
+            id: `hft${idCont++}`,
+            descricao: 'Laranjas',
+            qtd: 6
+        },
+        {
+            id: `hft${idCont++}`,
+            descricao: 'Cebolas',
+            qtd: 4,
+        },
+        {
+            id: `hft${idCont++}`,
+            descricao: 'Legumes',
             qtd: 1
         },
         {
-            id: idCont++,
-            descricao: 'San Bios',
-            qtd: 1
-        },
-        {
-            id: idCont++,
-            descricao: 'Qualy',
-            qtd: 1
-        },
-        {
-            id: idCont++,
-            descricao: 'Becel',
-            qtd: 1
-        },
-        {
-            id: idCont++,
-            descricao: 'Café',
-            qtd: 1
-        },
-        {
-            id: idCont++,
-            descricao: 'Biscoito',
-            qtd: 1
-        },
-        {
-            id: idCont++,
-            descricao: 'Ovos',
-            qtd: 20
-        },
-        {
-            id: idCont++,
-            descricao: 'Granola',
-            qtd: 1
-        },
-        {
-            id: idCont++,
-            descricao: 'Bolacha Maria',
-            qtd: 3
-        },
-        {
-            id: idCont++,
-            descricao: 'Agua e sal',
-            qtd: 1
-        },
-        {
-            id: idCont++,
-            descricao: 'Ameixa',
-            qtd: 50
-        },
-        {
-            id: idCont++,
-            descricao: 'Outros',
+            id: `hft${idCont++}`,
+            descricao: 'Temperos',
             qtd: 1
         }
     ]

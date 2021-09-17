@@ -1,74 +1,49 @@
-function lanches() {
-    let idCont = 5;
+function temperosprontos() {
+    let idCont = 1;
     let itensArray = [{
-            id: idCont++,
-            descricao: 'Pão castanhas',
-            qtd: 4
-        },
-        {
-            id: idCont++,
-            descricao: 'Outros pães',
+            id: (`tpp${idCont++}`),
+            descricao: 'Sal',
             qtd: 1
         },
         {
-            id: idCont++,
-            descricao: 'San Bios',
+            id: (`tpp${idCont++}`),
+            descricao: 'Meu segredo',
             qtd: 1
         },
         {
-            id: idCont++,
-            descricao: 'Qualy',
+            id: (`tpp${idCont++}`),
+            descricao: 'Tempero seco',
             qtd: 1
         },
         {
-            id: idCont++,
-            descricao: 'Becel',
+            id: (`tpp${idCont++}`),
+            descricao: 'Molho tomate',
             qtd: 1
         },
         {
-            id: idCont++,
-            descricao: 'Café',
+            id: (`tpp${idCont++}`),
+            descricao: 'Molho pesto',
             qtd: 1
         },
         {
-            id: idCont++,
-            descricao: 'Biscoito',
+            id: (`tpp${idCont++}`),
+            descricao: 'Molho madeira',
             qtd: 1
         },
         {
-            id: idCont++,
-            descricao: 'Ovos',
-            qtd: 20
-        },
-        {
-            id: idCont++,
-            descricao: 'Granola',
+            id: (`tpp${idCont++}`),
+            descricao: 'Temperos doces',
             qtd: 1
         },
         {
-            id: idCont++,
-            descricao: 'Bolacha Maria',
-            qtd: 3
-        },
-        {
-            id: idCont++,
-            descricao: 'Agua e sal',
-            qtd: 1
-        },
-        {
-            id: idCont++,
-            descricao: 'Ameixa',
-            qtd: 50
-        },
-        {
-            id: idCont++,
-            descricao: 'Outros',
+            id: (`tpp${idCont++}`),
+            descricao: 'Fermento',
             qtd: 1
         }
     ]
 
     function lista() {
-        const listaItens = document.querySelector('.lanches');
+        const listaItens = document.querySelector('.temperosprontos');
         let ul = listaItens.querySelector('ul');
 
         for (i = 0; i < itensArray.length; i++) {
@@ -84,4 +59,4 @@ function lanches() {
     lista();
 }
 
-lanches();
+temperosprontos();

@@ -1,71 +1,52 @@
 function lanches() {
-    let idCont = 5;
+    let idCont = 1;
     let itensArray = [{
-            id: idCont++,
+            id: (`lan${idCont++}`),
             descricao: 'Pão castanhas',
             qtd: 4
         },
         {
-            id: idCont++,
+            id: (`lan${idCont++}`),
             descricao: 'Outros pães',
             qtd: 1
         },
         {
-            id: idCont++,
+            id: (`lan${idCont++}`),
             descricao: 'San Bios',
             qtd: 1
         },
         {
-            id: idCont++,
+            id: (`lan${idCont++}`),
             descricao: 'Qualy',
             qtd: 1
         },
         {
-            id: idCont++,
+            id: (`lan${idCont++}`),
             descricao: 'Becel',
             qtd: 1
         },
         {
-            id: idCont++,
+            id: (`lan${idCont++}`),
             descricao: 'Café',
             qtd: 1
         },
         {
-            id: idCont++,
+            id: (`lan${idCont++}`),
             descricao: 'Biscoito',
             qtd: 1
         },
         {
-            id: idCont++,
+            id: (`lan${idCont++}`),
             descricao: 'Ovos',
             qtd: 20
         },
         {
-            id: idCont++,
+            id: (`lan${idCont++}`),
             descricao: 'Granola',
-            qtd: 1
-        },
-        {
-            id: idCont++,
-            descricao: 'Bolacha Maria',
-            qtd: 3
-        },
-        {
-            id: idCont++,
-            descricao: 'Agua e sal',
-            qtd: 1
-        },
-        {
-            id: idCont++,
-            descricao: 'Ameixa',
-            qtd: 50
-        },
-        {
-            id: idCont++,
-            descricao: 'Outros',
             qtd: 1
         }
     ]
+
 
     function lista() {
         const listaItens = document.querySelector('.lanches');
