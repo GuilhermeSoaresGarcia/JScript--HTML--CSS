@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div>Clique em mim</div>
+    <script>
+        var a = prompt('Digite o valor A:')
+        var b = prompt('Digite o valor B:')
+        var c = a > b ? 'A maior que B' : 'B maior que A'
+        var myWindow = window.open('teste.html')
+        myWindow.document.write(c)
+    </script>
+</body>
+
+</html>
