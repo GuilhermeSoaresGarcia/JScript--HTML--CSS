@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        input#vel {
+            width: 50px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sistema de multas</h1>
+    <input type="number" name="vel" id="vel">Insira a velocidade:
+    <button onclick="inserirVelocidade()">Verificar</button>
+    <div id="resultado">
+
+
+
+    </div>
+    <script>
+        function inserirVelocidade() {
+            let velocidade = document.querySelector('#vel')
+            let res = document.querySelector('#resultado')
+            let vel = Number(velocidade.value).toFixed(2)
+            res.innerHTML = ' '
+
+            if (vel > 60) {
+                res.innerHTML += `A velocidade do seu carro é ${vel}Km/h<br>`
+                res.innerHTML += `Você ultrapassou a velocidade permitida. Multado!<br>`
+            }
+
+            res.innerHTML += 'Dirija sempre usando cinto de segurança'
+        }
+    </script>
+</body>
+
+</html>

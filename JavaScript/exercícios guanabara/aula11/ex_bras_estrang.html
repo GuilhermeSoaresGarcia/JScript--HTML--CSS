@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro X Estrangeiro</title>
+</head>
+
+<body>
+    <h1>Brasileiro ou estrangeiro?</h1>
+    <input name="pais" id="pais" placeholder="Digite o país aqui">
+    <button onclick="confirmSelection()">Confirmar</button>
+    <div id="resultado"></div>
+
+
+    <script>
+        function confirmSelection() {
+            let typedCountry = document.getElementById('pais')
+            let typedCountryCorrected = typedCountry.value[0].toUpperCase() + (typedCountry.value.toLowerCase()).substring(1)
+            let res = document.querySelector('#resultado')
+            res.innerHTML = ' '
+
+            if (typedCountryCorrected === 'Brasil') {
+                res.innerHTML = `Você digitou ${typedCountryCorrected}. Você é <strong>brasileiro</strong>.`
+            } else if (typedCountryCorrected === 'Alemanha') {
+                res.innerHTML = `Você digitou ${typedCountryCorrected}. Você é <strong>alemão</strong>.`
+            } else if (typedCountryCorrected === 'França') {
+                res.innerHTML = `Você digitou ${typedCountryCorrected}. Você é <strong>francês</strong>.`
+            } else if (typedCountryCorrected === 'Eua' || typedCountryCorrected === 'Estados unidos' || typedCountryCorrected === 'Estados unidos da américa') {
+                res.innerHTML = `Você digitou ${typedCountryCorrected}. Você é <strong>estadunidense</strong>.`
+            } else if (typedCountryCorrected === 'Itália') {
+                res.innerHTML = `Você digitou ${typedCountryCorrected}. Você é <strong>italiano</strong>.`
+            } else {
+                res.innerHTML = `Você digitou ${typedCountryCorrected}. Você é <strong>estrangeiro</strong>.`
+            }
+        }
+    </script>
+</body>
+
+</html>
