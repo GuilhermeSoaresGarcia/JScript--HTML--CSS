@@ -1,0 +1,57 @@
+body {
+    font-family: Arial;
+    background: slategray;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background: white;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 5%;
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.7);
+}
+
+section .dados {
+    padding-top: 5px;
+    margin: 0px 180px;
+    width: 260px;
+    /* background: tomato; */
+}
+
+section .dados #anoNasc {
+    width: 70px;
+}
+
+section .dados #verificar {
+    margin-left: 25%;
+}
+
+section .texto {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 30px 0px 20px 0px;
+}
+
+section .imagem {
+    background-size: contain;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 100%;
+    /* background: tomato; */
+}
+
+footer p {
+    margin: 20px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
