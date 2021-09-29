@@ -1,0 +1,54 @@
+body {
+    font-family: Arial;
+    background: slategray;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background: white;
+    width: 600px;
+    min-height: 220px;
+    margin: 0 auto;
+    border-radius: 5%;
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.7);
+}
+
+section .dados {
+    color: black;
+    font-size: 16px;
+    width: 130px;
+    margin: 0 auto;
+    padding: 10px 0px 0px 0px;
+}
+
+section .dados p {
+    line-height: 30px;
+}
+
+section .dados input {
+    width: 50px;
+    height: 30px;
+    float: right;
+}
+
+section .dados button {
+    margin-left: 15px;
+}
+
+section .resultado {
+    width: auto;
+    height: auto;
+    margin: 50px auto;
+    padding: 0px 33px 20px 33px;
+}
+
+footer p {
+    margin: 20px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
