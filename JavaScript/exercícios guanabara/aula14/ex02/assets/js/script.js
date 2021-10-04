@@ -1,27 +1,61 @@
-let body = document.querySelector('body')
-let res = document.querySelector('.texto')
-let img = document.querySelector('.imagem')
+let dados = document.querySelector('.dados')
+let res = document.querySelector('.resultado')
 
-function pegarHora() {
-    let data = new Date()
-    let horas = data.getHours()
-    let minutos = data.getMinutes()
+function criarP() {
+    p = document.createElement('p')
+    dados.appendChild(p)
+    p.innerHTML = 'Número: '
+}
 
-    function alterarElementos() {
-        if (horas < 12) {
-            body.style.background = 'rgb(140, 190, 240)'
-            res.innerHTML = `Bom dia! <br> Agora são ${horas} horas e ${minutos} minutos.`
-            img.style.backgroundImage = "url('https://portalrbv.com.br/videira/wp-content/uploads/sites/3/2019/07/image_content_1265345_20180122080514.jpg')"
-        } else if (horas < 19) {
-            body.style.background = 'rgb(200,160,50)'
-            res.innerHTML = `Boa tarde! <br> Agora são ${horas} horas e ${minutos} minutos.`
-            img.style.backgroundImage = "url('http://www.pgoiolandotaques.seed.pr.gov.br/redeescola/escolas/25/2010/1846/arquivos/Image/Tarde.jpg')"
-        } else {
-            body.style.background = 'rgb(10,15,50)'
-            res.innerHTML = `Boa noite! <br> Agora são ${horas} horas e ${minutos} minutos.`
-            img.style.backgroundImage = "url('https://www.mensagens10.com.br/wp-content/uploads/2013/05/7958573893.jpg')"
+function criarInput() {
+    input = document.createElement('input')
+    p.appendChild(input)
+    input.setAttribute('type', 'number')
+    input.setAttribute('class', 'num')
+}
+
+function criarButton() {
+    button = document.createElement('button')
+    p.appendChild(button)
+    button.setAttribute('class', 'botao')
+    button.setAttribute('onclick', 'gerarTabuada()')
+    button.innerText = 'Gerar tabuada'
+}
+
+function criarSelect() {
+    select = document.createElement('select')
+    res.appendChild(select)
+    select.setAttribute('class', 'tabuada')
+    select.setAttribute('name', 'tabuada')
+    select.setAttribute('multiple', '')
+}
+
+function criarSelectOption() {
+    option = document.createElement('option')
+    option.setAttribute('class', 'opcao')
+    select.appendChild(option)
+}
+
+criarP()
+criarInput()
+criarButton()
+criarSelect()
+criarSelectOption()
+option.innerHTML = 'Digite um número acima'
+
+function gerarTabuada() {
+
+    let numero = document.querySelector('.num')
+    let fatorA
+    let fatorB = Number(numero.value)
+    option.innerText = ''
+
+    if (!fatorB) {
+        alert('Insira um número no campo "Número"')
+    } else {
+        for (fatorA = Number(0); fatorA < 11; fatorA++) {
+            option.innerText += `${fatorA} x ${fatorB} = ${fatorA * fatorB}`
+            criarSelectOption()
         }
     }
-    alterarElementos()
 }
-pegarHora()
